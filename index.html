@@ -534,7 +534,8 @@ harun <span>Shop</span>
 <li><a href="#products">Products</a></li>
 <li><a href="#offers">Offers</a></li>
 <li><a href="#about">About</a></li>
-<li><a href="#contact">Contact</a></li>
+<li><a href="#contact">Contact</a>
+<a href="#inquiry">Inquiry</a></li>
 <li><a href="#payment">payment</a></li>
 </ul>
 
@@ -559,7 +560,7 @@ New RO, AC और Washing Machine भी उपलब्ध हैं।
 <div class="buttons">
 
 <a class="btn btn-primary"
-href="https://wa.me/919347339870?text=Namaste%20Sarun%20Shop,%20mujhe%20RO/AC%20ke%20baare%20me%20jankari%20chahiye.">
+href="https://wa.me/919347339870?text=Namaste%20Harsh%20Air%20Conditioner,%20mujhe%20RO/AC%20ke%20baare%20me%20jankari%20chahiye.">
 💬 WhatsApp
 </a>
 
@@ -792,7 +793,7 @@ dankaur, Gautam Buddha Nagar 203201
 <div class="buttons">
 
 <a class="btn btn-primary"
-href="tel:9347336870">
+href="tel:9347339870">
 📞 Call
 </a>
 
@@ -820,6 +821,164 @@ loading="lazy">
 </div>
 
 </section>
+
+
+<!-- RO & AC INQUIRY SECTION -->
+<section class="inquiry-section" id="inquiry">
+  <div class="section-title">
+    <h2>📋 RO & AC Service Inquiry</h2>
+    <p>अपनी जरूरत बताएं — हम आपको जल्दी संपर्क करेंगे।</p>
+  </div>
+
+  <div class="inquiry-card">
+    <form id="inquiryForm">
+      <div class="form-grid">
+        <div class="form-group">
+          <label for="inqName">👤 आपका नाम *</label>
+          <input id="inqName" type="text" placeholder="जैसे: Rahul Kumar" required>
+        </div>
+
+        <div class="form-group">
+          <label for="inqPhone">📱 मोबाइल नंबर *</label>
+          <input id="inqPhone" type="tel" inputmode="numeric" maxlength="10"
+                 placeholder="10 digit mobile number" required>
+        </div>
+
+        <div class="form-group">
+          <label for="inqService">🔧 Service *</label>
+          <select id="inqService" required>
+            <option value="">Service चुनें</option>
+            <option>RO Service / Repair</option>
+            <option>RO Installation</option>
+            <option>RO Filter / Membrane Change</option>
+            <option>New RO Inquiry</option>
+            <option>AC Service</option>
+            <option>AC Repair</option>
+            <option>AC Installation</option>
+            <option>AC Gas Check / Cooling Issue</option>
+            <option>New AC Inquiry</option>
+            <option>AC / RO Rent Inquiry</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="inqVisit">📅 Preferred Visit</label>
+          <select id="inqVisit">
+            <option value="">कोई भी समय</option>
+            <option>Morning (9 AM – 12 PM)</option>
+            <option>Afternoon (12 PM – 3 PM)</option>
+            <option>Evening (3 PM – 7 PM)</option>
+          </select>
+        </div>
+
+        <div class="form-group full">
+          <label for="inqAddress">📍 Address / Area</label>
+          <input id="inqAddress" type="text" placeholder="अपना area / address लिखें">
+        </div>
+
+        <div class="form-group full">
+          <label for="inqMessage">📝 Problem / Requirement</label>
+          <textarea id="inqMessage" rows="4"
+                    placeholder="जैसे: AC cooling कम है / RO पानी साफ नहीं कर रहा है..."></textarea>
+        </div>
+      </div>
+
+      <button type="submit" class="inquiry-btn">💬 WhatsApp पर Inquiry भेजें</button>
+      <p class="inquiry-note">आपकी details WhatsApp message में खुलेंगी। Send दबाकर inquiry भेज दें।</p>
+    </form>
+  </div>
+</section>
+
+<style>
+.inquiry-section{
+  padding:55px 20px;
+  background:linear-gradient(135deg,#f4f8ff,#ffffff);
+}
+.inquiry-card{
+  max-width:850px;
+  margin:25px auto 0;
+  padding:30px;
+  background:#fff;
+  border-radius:20px;
+  box-shadow:0 8px 30px rgba(0,0,0,.12);
+}
+.form-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px;
+}
+.form-group{display:flex;flex-direction:column}
+.form-group.full{grid-column:1/-1}
+.form-group label{
+  margin-bottom:7px;
+  font-weight:700;
+}
+.form-group input,
+.form-group select,
+.form-group textarea{
+  width:100%;
+  box-sizing:border-box;
+  padding:13px 14px;
+  border:1px solid #d7dee8;
+  border-radius:10px;
+  font:inherit;
+  background:#fff;
+}
+.form-group textarea{resize:vertical}
+.inquiry-btn{
+  width:100%;
+  margin-top:22px;
+  padding:15px 20px;
+  border:0;
+  border-radius:12px;
+  background:#25d366;
+  color:#fff;
+  font-size:17px;
+  font-weight:700;
+  cursor:pointer;
+}
+.inquiry-btn:hover{opacity:.88}
+.inquiry-note{
+  text-align:center;
+  margin:12px 0 0;
+  color:#666;
+  font-size:13px;
+}
+@media(max-width:650px){
+  .form-grid{grid-template-columns:1fr}
+  .form-group.full{grid-column:auto}
+  .inquiry-card{padding:20px}
+}
+</style>
+
+<script>
+document.getElementById("inquiryForm").addEventListener("submit", function(e){
+  e.preventDefault();
+
+  const name = document.getElementById("inqName").value.trim();
+  const phone = document.getElementById("inqPhone").value.trim();
+  const service = document.getElementById("inqService").value;
+  const visit = document.getElementById("inqVisit").value || "कोई भी समय";
+  const address = document.getElementById("inqAddress").value.trim() || "नहीं बताया";
+  const message = document.getElementById("inqMessage").value.trim() || "कोई अतिरिक्त जानकारी नहीं";
+
+  if(!/^[0-9]{10}$/.test(phone)){
+    alert("कृपया 10 digit mobile number डालें।");
+    return;
+  }
+
+  const text =
+`*RO & AC Service Inquiry*%0A%0A` +
+`👤 Name: ${encodeURIComponent(name)}%0A` +
+`📱 Mobile: ${encodeURIComponent(phone)}%0A` +
+`🔧 Service: ${encodeURIComponent(service)}%0A` +
+`📅 Preferred Visit: ${encodeURIComponent(visit)}%0A` +
+`📍 Address/Area: ${encodeURIComponent(address)}%0A` +
+`📝 Problem/Requirement: ${encodeURIComponent(message)}`;
+
+  window.open("https://wa.me/919347339870?text=" + text, "_blank");
+});
+</script>
 
 <!-- FOOTER -->
 <footer>
@@ -850,7 +1009,7 @@ RO & AC Rent पर | New RO & AC | Washing Machine
 
 <!-- WHATSAPP FLOATING BUTTON -->
 <a class="whatsapp"
-href="https://wa.me/919347339870?text=Namaste%20Sarun%20Shop"
+href="https://wa.me/919347339870?text=Namaste%20Harsh%20Air%20Conditioner"
 target="_blank">
 💬
 </a>
@@ -884,7 +1043,7 @@ new Date().getFullYear();
 
 </script>
 <!-- ONLINE PAYMENT SECTION -->
-<section class="payment-section">
+<section class="payment-section" id="payment">
   <h2>💳 Online Payment</h2>
   <p>Harsh Air Conditioner की Service के लिए Online Payment करें</p>
 
@@ -982,4 +1141,4 @@ new Date().getFullYear();
 }
 </style>
 </body>
-</html>
+  </html>
