@@ -835,7 +835,7 @@ loading="lazy">
       <div class="form-grid">
         <div class="form-group">
           <label for="inqName">👤 आपका नाम *</label>
-          <input id="inqName" type="text" placeholder="जैसे: Rahul Kumar" required>
+          <input id="inqName" name="name" type="text" placeholder="जैसे: Rahul Kumar" required>
         </div>
 
         <div class="form-group">
@@ -846,7 +846,7 @@ loading="lazy">
 
         <div class="form-group">
           <label for="inqService">🔧 Service *</label>
-          <select id="inqService" required>
+          <select id="inqService" name="service" required>
             <option value="">Service चुनें</option>
             <option>RO Service / Repair</option>
             <option>RO Installation</option>
@@ -863,7 +863,7 @@ loading="lazy">
 
         <div class="form-group">
           <label for="inqVisit">📅 Preferred Visit</label>
-          <select id="inqVisit">
+          <select id="inqVisit" name="visit_time">
             <option value="">कोई भी समय</option>
             <option>Morning (9 AM – 12 PM)</option>
             <option>Afternoon (12 PM – 3 PM)</option>
@@ -873,7 +873,7 @@ loading="lazy">
 
         <div class="form-group full">
           <label for="inqAddress">📍 Address / Area</label>
-          <input id="inqAddress" type="text" placeholder="अपना area / address लिखें">
+          <input id="inqAddress" name="address" type="text" placeholder="अपना area / address लिखें">
         </div>
 
         <div class="form-group full">
@@ -952,9 +952,10 @@ loading="lazy">
 </style>
 
 <script>
-document.getElementById("inquiryForm").addEventListener("submit", function(e){
+document.getElementById("inquiryForm").addEventListener("submit", async function(e){
   e.preventDefault();
 
+  const form = this;
   const name = document.getElementById("inqName").value.trim();
   const phone = document.getElementById("inqPhone").value.trim();
   const service = document.getElementById("inqService").value;
@@ -967,16 +968,39 @@ document.getElementById("inquiryForm").addEventListener("submit", function(e){
     return;
   }
 
+  if(!service){
+    alert("कृपया Service चुनें।");
+    return;
+  }
+
   const text =
-`*RO & AC Service Inquiry*%0A%0A` +
-`👤 Name: ${encodeURIComponent(name)}%0A` +
-`📱 Mobile: ${encodeURIComponent(phone)}%0A` +
-`🔧 Service: ${encodeURIComponent(service)}%0A` +
-`📅 Preferred Visit: ${encodeURIComponent(visit)}%0A` +
-`📍 Address/Area: ${encodeURIComponent(address)}%0A` +
-`📝 Problem/Requirement: ${encodeURIComponent(message)}`;
+  `*RO & AC Service Inquiry*%0A%0A` +
+  `👤 Name: ${encodeURIComponent(name)}%0A` +
+  `📱 Mobile: ${encodeURIComponent(phone)}%0A` +
+  `🔧 Service: ${encodeURIComponent(service)}%0A` +
+  `📅 Preferred Visit: ${encodeURIComponent(visit)}%0A` +
+  `📍 Address/Area: ${encodeURIComponent(address)}%0A` +
+  `📝 Problem/Requirement: ${encodeURIComponent(message)}`;
 
   window.open("https://wa.me/919347339870?text=" + text, "_blank");
+
+  try {
+    const formData = new FormData(form);
+    formData.delete("visit_time");
+
+    const response = await fetch("submit-inquiry.php", {
+      method: "POST",
+      body: formData
+    });
+
+    if(!response.ok) throw new Error("Server error");
+
+    alert("Inquiry save हो गई है और WhatsApp भी खुल गया है।");
+    form.reset();
+  } catch(error) {
+    console.error("Inquiry database save error:", error);
+    alert("WhatsApp खुल गया है, लेकिन database में inquiry save नहीं हो पाई। Render पर submit-inquiry.php और database connection check करें।");
+  }
 });
 </script>
 
@@ -1115,32 +1139,4 @@ new Date().getFullYear();
 .pay-button,
 .whatsapp-button {
   display: block;
-  padding: 15px;
-  margin: 15px auto;
-  border-radius: 12px;
-  color: white;
-  text-decoration: none;
-  font-size: 17px;
-  font-weight: bold;
-}
-
-.pay-button {
-  background: #087cff;
-}
-
-.whatsapp-button {
-  background: #25d366;
-}
-
-.pay-button:hover,
-.whatsapp-button:hover {
-  opacity: 0.85;
-}
-
-.after-payment {
-  font-size: 14px;
-  color: #555;
-}
-</style>
-</body>
-  </html>
+  padding: 
