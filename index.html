@@ -1,1146 +1,1304 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en" class="scroll-smooth">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#0b6efd">
-
-<title>Harsh Air Conditioner | RO, AC service best technician in Gaur yamuna City</title>
-  
-<meta name="description"
-content="Harsh Air Conditioner - .RO, AC service best technician in Gaur yamuna City RO & AC Rent पर, New RO/AC, Washing Machine और Service.">
-
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,Helvetica,sans-serif;
-scroll-behavior:smooth;
-}
-
-body{
-background:#f5f8fc;
-color:#172033;
-}
-
-/* TOP BAR */
-.topbar{
-background:#071d49;
-color:white;
-padding:9px 5%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-font-size:14px;
-}
-
-.topbar a{
-color:white;
-text-decoration:none;
-margin-left:15px;
-}
-
-/* HEADER */
-header{
-background:white;
-position:sticky;
-top:0;
-z-index:1000;
-box-shadow:0 3px 15px rgba(0,0,0,.1);
-}
-
-.navbar{
-max-width:1200px;
-margin:auto;
-padding:15px 20px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-}
-
-.logo{
-font-size:28px;
-font-weight:bold;
-color:#0866ff;
-}
-
-.logo span{
-color:#ff7a00;
-}
-
-.nav-links{
-display:flex;
-list-style:none;
-gap:25px;
-}
-
-.nav-links a{
-text-decoration:none;
-color:#172033;
-font-weight:bold;
-}
-
-.nav-links a:hover{
-color:#0866ff;
-}
-
-.menu{
-display:none;
-font-size:28px;
-cursor:pointer;
-}
-
-/* HERO */
-.hero{
-min-height:560px;
-display:flex;
-align-items:center;
-background:
-linear-gradient(90deg,rgba(4,24,65,.95),rgba(4,24,65,.65)),
-linear-gradient(135deg,#0575e6,#00c6ff);
-color:white;
-padding:70px 7%;
-}
-
-.hero-content{
-max-width:700px;
-}
-
-.hero h1{
-font-size:52px;
-margin-bottom:18px;
-}
-
-.hero h1 span{
-color:#ffd166;
-}
-
-.hero p{
-font-size:20px;
-line-height:1.7;
-margin-bottom:30px;
-}
-
-.buttons{
-display:flex;
-gap:15px;
-flex-wrap:wrap;
-}
-
-.btn{
-display:inline-block;
-padding:14px 24px;
-border-radius:30px;
-text-decoration:none;
-font-weight:bold;
-transition:.3s;
-}
-
-.btn-primary{
-background:#ff7a00;
-color:white;
-}
-
-.btn-primary:hover{
-background:#e86500;
-transform:translateY(-3px);
-}
-
-.btn-light{
-background:white;
-color:#0755c9;
-}
-
-.btn-light:hover{
-transform:translateY(-3px);
-}
-
-/* SECTIONS */
-section{
-padding:70px 6%;
-}
-
-.section-title{
-text-align:center;
-margin-bottom:45px;
-}
-
-.section-title h2{
-font-size:36px;
-color:#092454;
-margin-bottom:10px;
-}
-
-.section-title p{
-color:#667085;
-}
-
-/* SERVICES */
-.services{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:22px;
-max-width:1200px;
-margin:auto;
-}
-
-.service-card{
-background:white;
-padding:30px 20px;
-text-align:center;
-border-radius:18px;
-box-shadow:0 8px 25px rgba(0,0,0,.08);
-transition:.3s;
-}
-
-.service-card:hover{
-transform:translateY(-8px);
-}
-
-.service-icon{
-font-size:50px;
-margin-bottom:15px;
-}
-
-.service-card h3{
-color:#092454;
-margin-bottom:10px;
-}
-
-.service-card p{
-color:#667085;
-line-height:1.6;
-}
-
-/* PRODUCTS */
-.products{
-background:#eef5ff;
-}
-
-.product-grid{
-max-width:1200px;
-margin:auto;
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:25px;
-}
-
-.product-card{
-background:white;
-border-radius:18px;
-overflow:hidden;
-box-shadow:0 8px 25px rgba(0,0,0,.09);
-transition:.3s;
-}
-
-.product-card:hover{
-transform:translateY(-6px);
-}
-
-.product-img{
-height:200px;
-display:flex;
-justify-content:center;
-align-items:center;
-font-size:85px;
-background:linear-gradient(135deg,#e8f3ff,#d8ecff);
-}
-
-.product-info{
-padding:22px;
-}
-
-.product-info h3{
-color:#092454;
-margin-bottom:8px;
-}
-
-.product-info p{
-color:#667085;
-line-height:1.5;
-}
-
-.price{
-color:#ff6b00;
-font-size:20px;
-font-weight:bold;
-margin:12px 0;
-}
-
-.buy-btn{
-display:block;
-text-align:center;
-background:#0866ff;
-color:white;
-padding:11px;
-border-radius:25px;
-text-decoration:none;
-font-weight:bold;
-}
-
-/* OFFER */
-.offer{
-background:linear-gradient(135deg,#ff7a00,#ff3d00);
-color:white;
-text-align:center;
-}
-
-.offer h2{
-font-size:40px;
-margin-bottom:15px;
-}
-
-.offer p{
-font-size:20px;
-margin-bottom:25px;
-}
-
-/* ABOUT */
-.about-container{
-max-width:1100px;
-margin:auto;
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:40px;
-align-items:center;
-}
-
-.about-box{
-background:white;
-padding:35px;
-border-radius:20px;
-box-shadow:0 8px 25px rgba(0,0,0,.08);
-}
-
-.about-box h2{
-color:#092454;
-margin-bottom:15px;
-font-size:32px;
-}
-
-.about-box p{
-color:#667085;
-line-height:1.8;
-margin-bottom:15px;
-}
-
-.about-list{
-list-style:none;
-}
-
-.about-list li{
-padding:10px 0;
-font-weight:bold;
-}
-
-/* CONTACT */
-.contact{
-background:#eef5ff;
-}
-
-.contact-container{
-max-width:1100px;
-margin:auto;
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:30px;
-}
-
-.contact-card{
-background:white;
-padding:35px;
-border-radius:20px;
-box-shadow:0 8px 25px rgba(0,0,0,.08);
-}
-
-.contact-card h3{
-font-size:25px;
-color:#092454;
-margin-bottom:20px;
-}
-
-.contact-item{
-margin:18px 0;
-font-size:17px;
-}
-
-.contact-item strong{
-display:block;
-margin-bottom:5px;
-color:#092454;
-}
-
-.contact-item a{
-color:#0866ff;
-text-decoration:none;
-font-weight:bold;
-}
-
-.map{
-width:100%;
-height:320px;
-border:0;
-border-radius:15px;
-}
-
-/* FOOTER */
-footer{
-background:#071d49;
-color:white;
-text-align:center;
-padding:30px 15px;
-}
-
-footer h2{
-margin-bottom:10px;
-}
-
-footer p{
-color:#d8e3f5;
-margin:7px 0;
-}
-
-/* FLOATING WHATSAPP */
-.whatsapp{
-position:fixed;
-right:20px;
-bottom:20px;
-width:60px;
-height:60px;
-background:#25d366;
-color:white;
-border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:30px;
-text-decoration:none;
-box-shadow:0 5px 20px rgba(0,0,0,.3);
-z-index:2000;
-}
-
-/* MOBILE */
-@media(max-width:900px){
-
-.services,
-.product-grid{
-grid-template-columns:repeat(2,1fr);
-}
-
-.about-container,
-.contact-container{
-grid-template-columns:1fr;
-}
-
-.hero h1{
-font-size:42px;
-}
-}
-
-@media(max-width:650px){
-
-.topbar{
-flex-direction:column;
-gap:5px;
-text-align:center;
-}
-
-.navbar{
-padding:13px 18px;
-}
-
-.logo{
-font-size:24px;
-}
-
-.menu{
-display:block;
-}
-
-.nav-links{
-display:none;
-position:absolute;
-top:70px;
-left:0;
-width:100%;
-background:white;
-flex-direction:column;
-padding:20px;
-gap:18px;
-box-shadow:0 5px 15px rgba(0,0,0,.1);
-}
-
-.nav-links.active{
-display:flex;
-}
-
-.hero{
-padding:55px 6%;
-min-height:500px;
-}
-
-.hero h1{
-font-size:37px;
-}
-
-.hero p{
-font-size:17px;
-}
-
-section{
-padding:50px 5%;
-}
-
-.section-title h2{
-font-size:30px;
-}
-
-.services,
-.product-grid{
-grid-template-columns:1fr;
-}
-
-.offer h2{
-font-size:30px;
-}
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool & Pure Home Services - RO & AC Repair, Service & Sales</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                        },
+                        coolCyan: {
+                            400: '#22d3ee',
+                            500: '#06b6d4',
+                            600: '#0891b2',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .bg-grid-pattern {
+            background-image: radial-gradient(#0284c7 0.75px, transparent 0.75px);
+            background-size: 24px 24px;
+            background-color: #f8fafc;
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #0ea5e9;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #0284c7;
+        }
+    </style>
 </head>
-
-<body>
-
-<!-- TOP BAR -->
-<div class="topbar">
-<div>📍 ro/ac service Best technician gaur Yamuna City 203201</div>
-<div>
-<a href="tel:9347339870">📞 9347339870</a>
-</div>
-</div>
-
-<!-- HEADER -->
-<header>
-<nav class="navbar">
-
-<div class="logo">
-Harsh <span>Air Conditioner</span>
-</div>
-
-<div class="menu" onclick="toggleMenu()">☰</div>
-
-<ul class="nav-links" id="navLinks">
-<li><a href="#home">Home</a></li>
-<li><a href="#services">Services</a></li>
-<li><a href="#products">Products</a></li>
-<li><a href="#offers">Offers</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#contact">Contact</a></li>
-<li><a href="#inquiry">Inquiry</a></li>
-<li><a href="#payment">Payment</a></li>
-</ul>
-
-</nav>
-</header>
-
-<!-- HERO -->
-<section class="hero" id="home">
-
-<div class="hero-content">
-
-<h1>
-Welcome to <span>Harsh Air Conditioner</span>
-</h1>
-
-<p>
-RO और AC Rent पर उपलब्ध हैं।
-New RO, AC और Washing Machine भी उपलब्ध हैं।
-उचित कीमत और भरोसेमंद सेवा के साथ। gaur yamuna city 
-</p>
-
-<div class="buttons">
-
-<a class="btn btn-primary"
-href="https://wa.me/919347339870?text=Namaste%20Harsh%20Air%20Conditioner,%20mujhe%20RO/AC%20ke%20baare%20me%20jankari%20chahiye.">
-💬 WhatsApp
-</a>
-
-<a class="btn btn-light" href="tel:9347339870">
-📞 Call Now
-</a>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- SERVICES -->
-<section id="services">
-
-<div class="section-title">
-<h2>हमारी Services</h2>
-<p>Harsh Air Conditioner पर उपलब्ध प्रमुख सेवाएँ</p>
-</div>
-
-<div class="services">
-
-<div class="service-card">
-<div class="service-icon">💧</div>
-<h3>RO Rent पर</h3>
-<p>
-घर और ऑफिस के लिए RO Rent पर उपलब्ध।
-</p>
-</div>
-
-<div class="service-card">
-<div class="service-icon">❄️</div>
-<h3>AC Rent पर</h3>
-<p>
-जरूरत के अनुसार AC Rent पर लें।
-</p>
-</div>
-
-<div class="service-card">
-<div class="service-icon">🆕</div>
-<h3>New RO & AC</h3>
-<p>
-नए RO और AC उपलब्ध हैं।
-</p>
-</div>
-
-<div class="service-card">
-<div class="service-icon">🧺</div>
-<h3>Washing Machine</h3>
-<p>
-Washing Machine की खरीदारी के लिए संपर्क करें।
-</p>
-</div>
-
-</div>
-
-</section>
-
-<!-- PRODUCTS -->
-<section class="products" id="products">
-
-<div class="section-title">
-<h2>हमारे Products</h2>
-<p>आपकी जरूरत के अनुसार Products</p>
-</div>
-
-<div class="product-grid">
-
-<div class="product-card">
-<div class="product-img">💧</div>
-<div class="product-info">
-<h3>RO Water Purifier</h3>
-<p>New RO Water Purifier.</p>
-<div class="price">Price: Call करें</div>
-
-<a class="buy-btn"
-href="https://wa.me/919347339870?text=RO%20Water%20Purifier%20ke%20liye%20jankari%20chahiye">
-WhatsApp करें
-</a>
-</div>
-</div>
-
-<div class="product-card">
-<div class="product-img">❄️</div>
-<div class="product-info">
-<h3>Air Conditioner</h3>
-<p>New AC और Rent पर AC.</p>
-<div class="price">Price: Call करें</div>
-
-<a class="buy-btn"
-href="https://wa.me/919347339870?text=AC%20ke%20liye%20jankari%20chahiye">
-WhatsApp करें
-</a>
-</div>
-</div>
-
-<div class="product-card">
-<div class="product-img">🧺</div>
-<div class="product-info">
-<h3>Washing Machine</h3>
-<p>नई Washing Machine उपलब्ध.</p>
-<div class="price">Price: Call करें</div>
-
-<a class="buy-btn"
-href="https://wa.me/919347339870?text=Washing%20Machine%20ke%20liye%20jankari%20chahiye">
-WhatsApp करें
-</a>
-</div>
-</div>
-
-<div class="product-card">
-<div class="product-img">🔧</div>
-<div class="product-info">
-<h3>Service & Repair</h3>
-<p>RO/AC की Service और Repair के लिए संपर्क करें.</p>
-<div class="price">Call करें</div>
-
-<a class="buy-btn"
-href="tel:9347339870">
-📞 Call Now
-</a>
-</div>
-</div>
-
-</div>
-
-</section>
-
-<!-- OFFER -->
-<section class="offer" id="offers">
-
-<h2>🔥 Special Offers</h2>
-
-<p>
-RO और AC Rent पर लेने के लिए आज ही संपर्क करें।
-</p>
-
-<a class="btn btn-light"
-href="https://wa.me/919347339870?text=Harsh%20Air%20Conditioner%20ke%20Special%20Offer%20ke%20baare%20me%20jankari%20chahiye">
-💬 Offer पूछें
-</a>
-
-</section>
-
-<!-- ABOUT -->
-<section id="about">
-
-<div class="section-title">
-<h2>About Harsh Air Conditioner</h2>
-<p>आपके भरोसे का नाम</p>
-</div>
-
-<div class="about-container">
-
-<div class="about-box">
-
-<h2>Harsh Air Conditioner</h2>
-
-<p>
-Harsh Air Conditioner, gaur Yamuna City 203201 में
-RO, AC और Washing Machine से जुड़ी सुविधाएँ
-उपलब्ध कराने के लिए बनाया गया है। ro/ac service best technician gaur yamuna city
-</p>
-
-<p>
-यहाँ RO और AC Rent पर  available तथा New RO, AC और
-Washing Machine उपलब्ध हैं।
-</p>
-
-</div>
-
-<div class="about-box">
-
-<h2>क्यों चुनें Harsh Air Conditioner?</h2>
-
-<ul class="about-list">
-<li>✅ उचित कीमत</li>
-<li>✅ RO Rent पर</li>
-<li>✅ AC Rent पर</li>
-<li>✅ New RO & AC</li>
-<li>✅ Washing Machine</li>
-<li>✅ WhatsApp पर तुरंत संपर्क</li>
-</ul>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- CONTACT -->
-<section class="contact" id="contact">
-
-<div class="section-title">
-<h2>Contact Us</h2>
-<p>Harsh Air Conditioner से संपर्क करें</p>
-</div>
-
-<div class="contact-container">
-
-<div class="contact-card">
-
-<h3>📞 Contact Details</h3>
-
-<div class="contact-item">
-<strong>Shop Name</strong>
-Harsh Air Conditioner
-</div>
-
-<div class="contact-item">
-<strong>📍 Address</strong>
-Dankaur, Gautam Buddha Nagar 203201
-</div>
-
-<div class="contact-item">
-<strong>📱 Mobile 1</strong>
-<a href="tel:9347339870">
-9347339870
-</a>
-</div>
-
-<div class="contact-item">
-<strong>📱 Mobile 2</strong>
-<a href="tel:9347339870">
-9347339870
-</a>
-</div>
-
-<div class="buttons">
-
-<a class="btn btn-primary"
-href="tel:9347339870">
-📞 Call
-</a>
-
-<a class="btn btn-primary"
-href="https://wa.me/919347339870">
-💬 WhatsApp
-</a>
-
-</div>
-
-</div>
-
-<div class="contact-card">
-
-<h3>📍 हमारा Location</h3>
-
-<iframe
-class="map"
-src="https://www.google.com/maps?q=Dankaur%2C%20Gautam%20Buddha%20Nagar%2C%20Uttar%20Pradesh&output=embed"
-loading="lazy">
-</iframe>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- RO & AC INQUIRY SECTION -->
-<section class="inquiry-section" id="inquiry">
-  <div class="section-title">
-    <h2>📋 RO & AC Service Inquiry</h2>
-    <p>अपनी जरूरत बताएं — हम आपको जल्दी संपर्क करेंगे।</p>
-  </div>
-
-  <div class="inquiry-card">
-    <form id="inquiryForm">
-      <div class="form-grid">
-        <div class="form-group">
-          <label for="inqName">👤 आपका नाम *</label>
-          <input id="inqName" type="text" placeholder="जैसे: Rahul Kumar" required>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- Top Announcement / Helpline Bar -->
+    <div class="bg-brand-900 text-slate-200 text-xs sm:text-sm py-2 px-4 border-b border-brand-800">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-4">
+                <span class="flex items-center gap-1.5"><i class="fa-solid fa-clock text-coolCyan-400"></i> Open 7 Days: 8:00 AM - 9:00 PM</span>
+                <span class="hidden md:inline-flex items-center gap-1.5"><i class="fa-solid fa-shield-halved text-emerald-400"></i> 100% Guaranteed Genuine Parts</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="tel:9347339870" class="hover:text-coolCyan-400 transition-colors flex items-center gap-1.5 font-medium">
+                    <i class="fa-solid fa-headset text-brand-500"></i> Toll Free: 9347339870
+                </a>
+                <span class="text-brand-700">|</span>
+                <span class="flex items-center gap-1"><i class="fa-solid fa-location-dot text-rose-400"></i> Gaur Yamuna City, Greater Noida 203201</span>
+            </div>
         </div>
+    </div>
 
-        <div class="form-group">
-          <label for="inqPhone">📱 मोबाइल नंबर *</label>
-          <input id="inqPhone" type="tel" inputmode="numeric" maxlength="10"
-                 placeholder="10 digit mobile number" required>
+    <!-- Main Navigation Header -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-brand-600 to-coolCyan-500 flex items-center justify-center text-white shadow-md shadow-brand-500/20 group-hover:scale-105 transition-transform">
+                    <i class="fa-solid fa-snowflake text-2xl"></i>
+                </div>
+                <div>
+                    <span class="text-xl sm:text-2xl font-extrabold tracking-tight text-slate-900 block leading-tight">
+                        COOL & <span class="text-brand-600">PURE</span>
+                    </span>
+                    <span class="text-xs font-semibold text-slate-500 tracking-wider uppercase block">RO & AC Expert Care</span>
+                </div>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="hidden lg:flex items-center gap-8 font-medium text-slate-600">
+                <a href="#hero" class="hover:text-brand-600 transition-colors">Home</a>
+                <a href="#estimator" class="hover:text-brand-600 transition-colors">Cost Estimator</a>
+                <a href="#inquiry-form" class="hover:text-brand-600 transition-colors">Book Service</a>
+                <a href="#services" class="hover:text-brand-600 transition-colors">Services & Pricing</a>
+                <a href="#faqs" class="hover:text-brand-600 transition-colors">FAQs</a>
+                <a href="#reviews" class="hover:text-brand-600 transition-colors">Reviews</a>
+            </nav>
+
+            <!-- Action Buttons -->
+            <div class="flex items-center gap-3">
+                <a href="https://wa.me/919347339870?text=Hi%2C%20I%20need%20RO%20/%20AC%20Service%20Inquiry" target="_blank" rel="noopener noreferrer" class="bg-emerald-500 hover:bg-emerald-600 text-white font-medium px-4 py-2.5 rounded-xl text-sm flex items-center gap-2 shadow-sm transition-all hover:shadow-emerald-500/20">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span class="hidden sm:inline">WhatsApp</span>
+                </a>
+                <a href="#inquiry-form" class="bg-brand-600 hover:bg-brand-700 text-white font-semibold px-5 py-2.5 rounded-xl text-sm shadow-md shadow-brand-500/20 transition-all hover:-translate-y-0.5">
+                    Book Now
+                </a>
+            </div>
         </div>
+    </header>
 
-        <div class="form-group">
-          <label for="inqService">🔧 Service *</label>
-          <select id="inqService" required>
-            <option value="">Service चुनें</option>
-            <option>RO Service / Repair</option>
-            <option>RO Installation</option>
-            <option>RO Filter / Membrane Change</option>
-            <option>New RO Inquiry</option>
-            <option>AC Service</option>
-            <option>AC Repair</option>
-            <option>AC Installation</option>
-            <option>AC Gas Check / Cooling Issue</option>
-            <option>New AC Inquiry</option>
-            <option>AC / RO Rent Inquiry</option>
-          </select>
+    <!-- Hero Section -->
+    <section id="hero" class="relative overflow-hidden bg-gradient-to-br from-slate-900 via-brand-950 to-slate-900 text-white py-16 lg:py-24">
+        <!-- Decorative Ambient Background Lights -->
+        <div class="absolute -top-40 -right-40 w-96 h-96 bg-brand-500/20 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-coolCyan-500/20 rounded-full blur-3xl pointer-events-none"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Hero Text Column -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-500/10 border border-brand-500/30 text-coolCyan-400 text-xs sm:text-sm font-semibold tracking-wide uppercase">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                        Authorized RO & AC Repair, Maintenance & Sales
+                    </div>
+
+                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                        Chilled Air & <span class="text-transparent bg-clip-text bg-gradient-to-r from-coolCyan-400 via-sky-300 to-brand-400">Pure Water</span> Delivered To Your Doorstep
+                    </h1>
+
+                    <p class="text-slate-300 text-base sm:text-lg max-w-2xl font-light leading-relaxed">
+                        Instant doorstep RO Purifier Filter Replacement & AC Jet Servicing by certified technicians. 100% genuine spare parts with a 30-day service warranty.
+                    </p>
+
+                    <!-- Feature Badges -->
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2">
+                        <div class="flex items-center gap-2.5 p-3 rounded-xl bg-white/5 border border-white/10 backdrop-blur-sm">
+                            <i class="fa-solid fa-truck-fast text-coolCyan-400 text-xl"></i>
+                            <span class="text-xs sm:text-sm font-medium text-slate-200">Express 60-Min Arrival</span>
+                        </div>
+                        <div class="flex items-center gap-2.5 p-3 rounded-xl bg-white/5 border border-white/10 backdrop-blur-sm">
+                            <i class="fa-solid fa-user-check text-emerald-400 text-xl"></i>
+                            <span class="text-xs sm:text-sm font-medium text-slate-200">Certified Engineers</span>
+                        </div>
+                        <div class="flex items-center gap-2.5 p-3 rounded-xl bg-white/5 border border-white/10 backdrop-blur-sm col-span-2 sm:col-span-1">
+                            <i class="fa-solid fa-indian-rupee-sign text-amber-400 text-xl"></i>
+                            <span class="text-xs sm:text-sm font-medium text-slate-200">Fixed Upfront Rates</span>
+                        </div>
+                    </div>
+
+                    <!-- Call to Actions -->
+                    <div class="flex flex-wrap items-center gap-4 pt-4">
+                        <a href="#inquiry-form" class="bg-gradient-to-r from-brand-500 to-coolCyan-500 hover:from-brand-600 hover:to-coolCyan-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg shadow-brand-500/25 flex items-center gap-3 transition-all transform hover:-translate-y-0.5">
+                            <i class="fa-solid fa-calendar-check text-lg"></i>
+                            Book Service Online
+                        </a>
+                        <a href="#estimator" class="bg-white/10 hover:bg-white/20 text-white font-semibold px-6 py-4 rounded-xl border border-white/20 backdrop-blur-md flex items-center gap-2 transition-all">
+                            <i class="fa-solid fa-calculator text-coolCyan-400"></i>
+                            Calculate Cost Estimate
+                        </a>
+                    </div>
+
+                    <!-- Counter Stats -->
+                    <div class="pt-6 border-t border-slate-800 grid grid-cols-3 gap-4 text-center sm:text-left">
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-extrabold text-white">15,000+</p>
+                            <p class="text-xs text-slate-400 font-medium">Serviced Units</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-extrabold text-white">4.9 ★</p>
+                            <p class="text-xs text-slate-400 font-medium">Customer Rating</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-extrabold text-white">30 Days</p>
+                            <p class="text-xs text-slate-400 font-medium">Service Guarantee</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Graphic / Service Selector Card Preview -->
+                <div class="lg:col-span-5">
+                    <div class="relative mx-auto max-w-md bg-white text-slate-800 rounded-2xl p-6 shadow-2xl border border-slate-100">
+                        <!-- Top Tag -->
+                        <div class="flex items-center justify-between pb-4 border-b border-slate-100 mb-5">
+                            <span class="text-xs font-bold uppercase tracking-wider text-brand-600 bg-brand-50 px-3 py-1 rounded-full">Fast Repair Booking</span>
+                            <span class="text-xs text-emerald-600 font-semibold flex items-center gap-1">
+                                <i class="fa-solid fa-circle text-[8px] animate-pulse"></i> Techs Available Now
+                            </span>
+                        </div>
+
+                        <p class="text-lg font-bold text-slate-900 mb-2">Need Immediate Service?</p>
+                        <p class="text-xs text-slate-500 mb-5">Choose service category to instantly pre-fill your quick booking form below:</p>
+
+                        <!-- Quick Category Buttons -->
+                        <div class="space-y-3">
+                            <button onclick="quickSelectCategory('ro')" class="w-full group p-3.5 rounded-xl border border-slate-200 hover:border-brand-500 hover:bg-brand-50/50 flex items-center justify-between transition-all">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 rounded-lg bg-sky-100 text-sky-600 flex items-center justify-center font-bold text-lg group-hover:bg-brand-600 group-hover:text-white transition-colors">
+                                        <i class="fa-solid fa-glass-water"></i>
+                                    </div>
+                                    <div class="text-left">
+                                        <h4 class="font-bold text-sm text-slate-800">RO Water Purifier</h4>
+                                        <p class="text-xs text-slate-500">Filter replacement, Leakage, AMC</p>
+                                    </div>
+                                </div>
+                                <i class="fa-solid fa-chevron-right text-slate-400 group-hover:text-brand-600 group-hover:translate-x-1 transition-all"></i>
+                            </button>
+
+                            <button onclick="quickSelectCategory('ac')" class="w-full group p-3.5 rounded-xl border border-slate-200 hover:border-brand-500 hover:bg-brand-50/50 flex items-center justify-between transition-all">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 rounded-lg bg-cyan-100 text-cyan-600 flex items-center justify-center font-bold text-lg group-hover:bg-cyan-600 group-hover:text-white transition-colors">
+                                        <i class="fa-solid fa-wind"></i>
+                                    </div>
+                                    <div class="text-left">
+                                        <h4 class="font-bold text-sm text-slate-800">Air Conditioner (AC)</h4>
+                                        <p class="text-xs text-slate-500">Foam Jet Wash, Gas Charging, PCB Repair</p>
+                                    </div>
+                                </div>
+                                <i class="fa-solid fa-chevron-right text-slate-400 group-hover:text-brand-600 group-hover:translate-x-1 transition-all"></i>
+                            </button>
+
+                            <button onclick="quickSelectCategory('both')" class="w-full group p-3.5 rounded-xl border border-slate-200 hover:border-brand-500 hover:bg-brand-50/50 flex items-center justify-between transition-all">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 rounded-lg bg-indigo-100 text-indigo-600 flex items-center justify-center font-bold text-lg group-hover:bg-indigo-600 group-hover:text-white transition-colors">
+                                        <i class="fa-solid fa-layer-group"></i>
+                                    </div>
+                                    <div class="text-left">
+                                        <h4 class="font-bold text-sm text-slate-800">Both RO + AC Combo</h4>
+                                        <p class="text-xs text-slate-500">Get 15% Combo Discount on labor</p>
+                                    </div>
+                                </div>
+                                <i class="fa-solid fa-chevron-right text-slate-400 group-hover:text-brand-600 group-hover:translate-x-1 transition-all"></i>
+                            </button>
+                        </div>
+
+                        <!-- Emergency Call snippet -->
+                        <div class="mt-5 pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+                            <span>Prefer direct call?</span>
+                            <a href="tel:919347339870" class="font-bold text-brand-600 hover:underline flex items-center gap-1">
+                                <i class="fa-solid fa-phone"></i> 9347339870
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
+    </section>
 
-        <div class="form-group">
-          <label for="inqVisit">📅 Preferred Visit</label>
-          <select id="inqVisit">
-            <option value="">कोई भी समय</option>
-            <option>Morning (9 AM – 12 PM)</option>
-            <option>Afternoon (12 PM – 3 PM)</option>
-            <option>Evening (3 PM – 7 PM)</option>
-          </select>
+    <!-- Instant Cost Estimator Widget Section -->
+    <section id="estimator" class="py-16 bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-brand-600 text-sm font-bold uppercase tracking-wider bg-brand-50 px-3.5 py-1 rounded-full">Transparent Pricing</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3">Instant Cost Estimator</h2>
+                <p class="text-slate-600 mt-2">Select your needed services below to see an approximate upfront pricing quote in real-time.</p>
+            </div>
+
+            <div class="bg-slate-50 border border-slate-200 rounded-3xl p-6 sm:p-8 shadow-sm">
+                <div class="grid lg:grid-cols-12 gap-8">
+                    
+                    <!-- Left Column: Estimator Options -->
+                    <div class="lg:col-span-8 space-y-6">
+                        
+                        <!-- Service Category Filter Tabs -->
+                        <div class="flex flex-wrap gap-2 border-b border-slate-200 pb-4">
+                            <button onclick="setCalcFilter('all')" id="calc-tab-all" class="calc-tab-btn active px-4 py-2 rounded-lg font-medium text-sm bg-brand-600 text-white shadow-sm transition-all">
+                                All Services
+                            </button>
+                            <button onclick="setCalcFilter('ro')" id="calc-tab-ro" class="calc-tab-btn px-4 py-2 rounded-lg font-medium text-sm bg-white text-slate-600 hover:bg-slate-100 transition-all">
+                                RO Water Purifiers
+                            </button>
+                            <button onclick="setCalcFilter('ac')" id="calc-tab-ac" class="calc-tab-btn px-4 py-2 rounded-lg font-medium text-sm bg-white text-slate-600 hover:bg-slate-100 transition-all">
+                                Air Conditioners
+                            </button>
+                        </div>
+
+                        <!-- Checkboxes List -->
+                        <div class="grid sm:grid-cols-2 gap-4" id="estimator-options">
+                            <!-- JS will inject or toggle items here based on category -->
+                            
+                            <!-- RO Items -->
+                            <label class="calc-item ro-item flex items-start gap-3 p-4 bg-white rounded-2xl border border-slate-200 hover:border-brand-500 cursor-pointer transition-all">
+                                <input type="checkbox" data-price="499" data-name="RO Standard Servicing & Filter Cleaning" class="calc-checkbox mt-1 w-4 h-4 text-brand-600 rounded border-slate-300 focus:ring-brand-500" onchange="calculateEstimate()">
+                                <div>
+                                    <div class="font-bold text-slate-800 text-sm">RO Standard Servicing</div>
+                                    <div class="text-xs text-slate-500">Filter cleaning, pressure check, TDS calibration</div>
+                                    <div class="text-xs font-bold text-brand-600 mt-1">₹499</div>
+                                </div>
+                            </label>
+
+                            <label class="calc-item ro-item flex items-start gap-3 p-4 bg-white rounded-2xl border border-slate-200 hover:border-brand-500 cursor-pointer transition-all">
+                                <input type="checkbox" data-price="1299" data-name="RO High-TDS Membrane Replacement" class="calc-checkbox mt-1 w-4 h-4 text-brand-600 rounded border-slate-300 focus:ring-brand-500" onchange="calculateEstimate()">
+                                <div>
+                                    <div class="font-bold text-slate-800 text-sm">RO Membrane Change</div>
+                                    <div class="text-xs text-slate-500">Genuine 80/100 GPD high-rejection membrane</div>
+                                    <div class="text-xs font-bold text-brand-600 mt-1">₹1,299</div>
+                                </div>
+                            </label>
+
+                            <label class="calc-item ro-item flex items-start gap-3 p-4 bg-white rounded-2xl border border-slate-200 hover:border-brand-500 cursor-pointer transition-all">
+                                <input type="checkbox" data-price="2499" data-name="1-Year Full RO AMC Plan" class="calc-checkbox mt-1 w-4 h-4 text-brand-600 rounded border-slate-300 focus:ring-brand-500" onchange="calculateEstimate()">
+                                <div>
+                                    <div class="font-bold text-slate-800 text-sm">1-Year RO AMC Contract</div>
+                                    <div class="text-xs text-slate-500">3 Free routine services + All filter replacements included</div>
+                                    <div class="text-xs font-bold text-brand-600 mt-1">₹2,499</div>
+                                </div>
+                            </label>
+
+                            <label class="calc-item ro-item flex items-start gap-3 p-4 bg-white rounded-2xl border border-slate-200 hover:border-brand-500 cursor-pointer transition-all">
+                                <input type="checkbox" data-price="399" data-name="RO Pump / Water Leakage Repair" class="calc-checkbox mt-1 w-4 h-4 text-brand-600 rounded border-slate-300 focus:ring-brand-500" onchange="calculateEstimate()">
+                                <div>
+                                    <div class="font-bold text-slate-800 text-sm">RO Leakage & Booster Check</div>
+                                    <div class="text-xs text-slate-500">Fixing pipe leakages, adapter & solenoid valve</div>
+                                    <div class="text-xs font-bold text-brand-600 mt-1">₹399</div>
+                                </div>
+                            </label>
+
+                            <!-- AC Items -->
+                            <label class="calc-item ac-item flex items-start gap-3 p-4 bg-white rounded-2xl border border-slate-200 hover:border-brand-500 cursor-pointer transition-all">
+                                <input type="checkbox" data-price="599" data-name="AC Foam Jet Wash (Split/Window)" class="calc-checkbox mt-1 w-4 h-4 text-brand-600 rounded border-slate-300 focus:ring-brand-500" onchange="calculateEstimate()">
+                                <div>
+                                    <div class="font-bold text-slate-800 text-sm">AC Deep Foam Jet Wash</div>
+                                    <div class="text-xs text-slate-500">High-pressure jet pump wash with anti-bacterial foam</div>
+                                    <div class="text-xs font-bold text-brand-600 mt-1">₹599</div>
+                                </div>
+                            </label>
+
+                            <label class="calc-item ac-item flex items-start gap-3 p-4 bg-white rounded-2xl border border-slate-200 hover:border-brand-500 cursor-pointer transition-all">
+                                <input type="checkbox" data-price="1899" data-name="AC Full Gas Charging (R32 / R410)" class="calc-checkbox mt-1 w-4 h-4 text-brand-600 rounded border-slate-300 focus:ring-brand-500" onchange="calculateEstimate()">
+                                <div>
+                                    <div class="font-bold text-slate-800 text-sm">AC Freon Gas Refill</div>
+                                    <div class="text-xs text-slate-500">Leak identification + pressure testing + full gas top-up</div>
+                                    <div class="text-xs font-bold text-brand-600 mt-1">₹1,899</div>
+                                </div>
+                            </label>
+
+                            <label class="calc-item ac-item flex items-start gap-3 p-4 bg-white rounded-2xl border border-slate-200 hover:border-brand-500 cursor-pointer transition-all">
+                                <input type="checkbox" data-price="1499" data-name="AC Installation / Uninstallation" class="calc-checkbox mt-1 w-4 h-4 text-brand-600 rounded border-slate-300 focus:ring-brand-500" onchange="calculateEstimate()">
+                                <div>
+                                    <div class="font-bold text-slate-800 text-sm">Split AC Installation</div>
+                                    <div class="text-xs text-slate-500">Outdoor bracket mounting, pipe connection & vacuuming</div>
+                                    <div class="text-xs font-bold text-brand-600 mt-1">₹1,499</div>
+                                </div>
+                            </label>
+
+                            <label class="calc-item ac-item flex items-start gap-3 p-4 bg-white rounded-2xl border border-slate-200 hover:border-brand-500 cursor-pointer transition-all">
+                                <input type="checkbox" data-price="1199" data-name="AC PCB Circuit Repair" class="calc-checkbox mt-1 w-4 h-4 text-brand-600 rounded border-slate-300 focus:ring-brand-500" onchange="calculateEstimate()">
+                                <div>
+                                    <div class="font-bold text-slate-800 text-sm">AC PCB Circuit Board Repair</div>
+                                    <div class="text-xs text-slate-500">Diagnosing and repairing inverted motherboard issues</div>
+                                    <div class="text-xs font-bold text-brand-600 mt-1">₹1,199</div>
+                                </div>
+                            </label>
+
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Estimate Summary Card -->
+                    <div class="lg:col-span-4">
+                        <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-md h-full flex flex-col justify-between">
+                            <div>
+                                <h3 class="font-bold text-slate-900 text-lg border-b border-slate-100 pb-3 mb-4 flex items-center justify-between">
+                                    <span>Estimate Breakdown</span>
+                                    <i class="fa-solid fa-receipt text-brand-600"></i>
+                                </h3>
+
+                                <div id="calc-summary-list" class="space-y-2 mb-4 text-xs text-slate-600 max-h-48 overflow-y-auto pr-1">
+                                    <p class="text-slate-400 italic">No services selected yet. Check boxes on the left to add items.</p>
+                                </div>
+                            </div>
+
+                            <div class="pt-4 border-t border-slate-100 space-y-4">
+                                <div class="flex items-center justify-between text-sm">
+                                    <span class="text-slate-500 font-medium">Estimated Total:</span>
+                                    <span class="text-2xl font-black text-brand-600" id="calc-total-price">₹0</span>
+                                </div>
+                                <p class="text-[11px] text-slate-400 leading-tight">
+                                    *Note: Final cost may vary slightly based on exact spare parts used during inspection. Visiting charge ₹199 waived on service booking.
+                                </p>
+                                <button onclick="transferEstimateToForm()" class="w-full py-3 px-4 bg-brand-600 hover:bg-brand-700 text-white rounded-xl font-bold text-sm shadow-md transition-all flex items-center justify-center gap-2">
+                                    Proceed to Booking <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="form-group full">
-          <label for="inqAddress">📍 Address / Area</label>
-          <input id="inqAddress" type="text" placeholder="अपना area / address लिखें">
+    <!-- Interactive Inquiry Form Section -->
+    <section id="inquiry-form" class="py-16 bg-grid-pattern">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="bg-white border border-slate-200 rounded-3xl shadow-xl overflow-hidden">
+                <!-- Form Header -->
+                <div class="bg-gradient-to-r from-brand-700 via-brand-600 to-coolCyan-600 p-6 sm:p-8 text-white relative">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <span class="inline-block px-3 py-1 rounded-full bg-white/20 text-xs font-semibold uppercase tracking-wider mb-2">Priority Booking Form</span>
+                            <h2 class="text-2xl sm:text-3xl font-extrabold">Service & Sales Inquiry</h2>
+                            <p class="text-brand-100 text-xs sm:text-sm mt-1">Get instant callback & confirmation from expert engineers within 15 mins.</p>
+                        </div>
+                        <div class="hidden sm:block text-5xl text-white/20">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Body -->
+                <form id="mainInquiryForm" class="p-6 sm:p-8 space-y-6" onsubmit="handleFormSubmit(event)">
+                    
+                    <!-- 1. Service Category Selection Tabs -->
+                    <div>
+                        <label class="block text-sm font-bold text-slate-800 mb-2">
+                            1. Select Service Category <span class="text-rose-500">*</span>
+                        </label>
+                        <div class="grid grid-cols-3 gap-3" id="service-category-tabs">
+                            <button type="button" onclick="selectServiceCategory('ro')" id="cat-btn-ro" class="cat-btn border-2 border-brand-500 bg-brand-50 text-brand-700 rounded-xl p-3 text-center transition-all">
+                                <i class="fa-solid fa-glass-water text-xl block mb-1"></i>
+                                <span class="text-xs sm:text-sm font-bold">RO Purifier</span>
+                            </button>
+                            <button type="button" onclick="selectServiceCategory('ac')" id="cat-btn-ac" class="cat-btn border-2 border-slate-200 bg-slate-50 text-slate-600 rounded-xl p-3 text-center hover:border-slate-300 transition-all">
+                                <i class="fa-solid fa-wind text-xl block mb-1"></i>
+                                <span class="text-xs sm:text-sm font-bold">Air Conditioner</span>
+                            </button>
+                            <button type="button" onclick="selectServiceCategory('both')" id="cat-btn-both" class="cat-btn border-2 border-slate-200 bg-slate-50 text-slate-600 rounded-xl p-3 text-center hover:border-slate-300 transition-all">
+                                <i class="fa-solid fa-layer-group text-xl block mb-1"></i>
+                                <span class="text-xs sm:text-sm font-bold">RO + AC Both</span>
+                            </button>
+                        </div>
+                        <input type="hidden" id="selectedCategory" name="category" value="ro">
+                    </div>
+
+                    <!-- 2. Specific Service Needed & Brand -->
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        
+                        <!-- Dynamic Specific Service Dropdown -->
+                        <div>
+                            <label for="specificService" class="block text-sm font-bold text-slate-800 mb-1">
+                                Specific Service Required <span class="text-rose-500">*</span>
+                            </label>
+                            <select id="specificService" name="specificService" required class="w-full rounded-xl border border-slate-300 p-3 text-sm focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition-all bg-white">
+                                <!-- Populated dynamically via JS -->
+                            </select>
+                        </div>
+
+                        <!-- Appliance Brand Dropdown -->
+                        <div>
+                            <label for="brandSelect" class="block text-sm font-bold text-slate-800 mb-1">
+                                Appliance Brand <span class="text-rose-500">*</span>
+                            </label>
+                            <select id="brandSelect" name="brand" required class="w-full rounded-xl border border-slate-300 p-3 text-sm focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition-all bg-white">
+                                <option value="" disabled selected>Select Brand Name</option>
+                                <optgroup label="RO Water Purifier Brands">
+                                    <option value="Kent">Kent RO</option>
+                                    <option value="Aquaguard / Eureka Forbes">Aquaguard / Eureka Forbes</option>
+                                    <option value="Pureit (HUL)">Pureit (HUL)</option>
+                                    <option value="Livpure">Livpure</option>
+                                    <option value="Havells">Havells</option>
+                                    <option value="Blue Star RO">Blue Star</option>
+                                    <option value="AO Smith">AO Smith</option>
+                                </optgroup>
+                                <optgroup label="AC Brands">
+                                    <option value="Voltas">Voltas</option>
+                                    <option value="Daikin">Daikin</option>
+                                    <option value="LG">LG</option>
+                                    <option value="Samsung">Samsung</option>
+                                    <option value="Blue Star AC">Blue Star</option>
+                                    <option value="Hitachi">Hitachi</option>
+                                    <option value="Carrier">Carrier</option>
+                                    <option value="Panasonic">Panasonic</option>
+                                    <option value="Lloyd">Lloyd</option>
+                                    <option value="O General">O General</option>
+                                </optgroup>
+                                <option value="Other / Multi-Brand">Other / Brand Not Listed</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <!-- 3. Customer Contact Info -->
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <div>
+                            <label for="fullName" class="block text-sm font-bold text-slate-800 mb-1">
+                                Full Name <span class="text-rose-500">*</span>
+                            </label>
+                            <div class="relative">
+                                <i class="fa-solid fa-user absolute left-3.5 top-3.5 text-slate-400 text-sm"></i>
+                                <input type="text" id="fullName" name="fullName" placeholder="e.g. Rahul Sharma" required class="w-full rounded-xl border border-slate-300 pl-10 pr-3 py-3 text-sm focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition-all">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="phoneNumber" class="block text-sm font-bold text-slate-800 mb-1">
+                                Mobile / WhatsApp Number <span class="text-rose-500">*</span>
+                            </label>
+                            <div class="relative">
+                                <i class="fa-solid fa-phone absolute left-3.5 top-3.5 text-slate-400 text-sm"></i>
+                                <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="10-digit mobile number" pattern="[0-9]{10}" required class="w-full rounded-xl border border-slate-300 pl-10 pr-3 py-3 text-sm focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition-all">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <div>
+                            <label for="emailAddr" class="block text-sm font-bold text-slate-800 mb-1">
+                                Email Address <span class="text-slate-400 font-normal">(Optional)</span>
+                            </label>
+                            <div class="relative">
+                                <i class="fa-solid fa-envelope absolute left-3.5 top-3.5 text-slate-400 text-sm"></i>
+                                <input type="email" id="emailAddr" name="email" placeholder="rahul@example.com" class="w-full rounded-xl border border-slate-300 pl-10 pr-3 py-3 text-sm focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition-all">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="urgencySlot" class="block text-sm font-bold text-slate-800 mb-1">
+                                Preferred Time Slot / Urgency
+                            </label>
+                            <select id="urgencySlot" name="urgency" class="w-full rounded-xl border border-slate-300 p-3 text-sm focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition-all bg-white">
+                                <option value="Urgent (Within 2 Hours)">Urgent (Within 2 Hours)</option>
+                                <option value="Today - Evening Slot">Today - Evening Slot (4 PM - 8 PM)</option>
+                                <option value="Tomorrow Morning">Tomorrow Morning (9 AM - 1 PM)</option>
+                                <option value="Weekend Slot">Weekend Slot</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- 4. Location Address -->
+                    <div>
+                        <label for="address" class="block text-sm font-bold text-slate-800 mb-1">
+                            Complete Address / Area & Landmark <span class="text-rose-500">*</span>
+                        </label>
+                        <textarea id="address" name="address" rows="2" placeholder="House/Flat No., Street Name, Gaur Yamuna City, Greater Noida 203201" required class="w-full rounded-xl border border-slate-300 p-3 text-sm focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition-all"></textarea>
+                    </div>
+
+                    <!-- 5. Problem Description -->
+                    <div>
+                        <label for="problemDesc" class="block text-sm font-bold text-slate-800 mb-1">
+                            Problem Description / Special Notes
+                        </label>
+                        <textarea id="problemDesc" name="problemDesc" rows="2" placeholder="e.g. Water taste is bad, AC not blowing cold air, water dripping indoors..." class="w-full rounded-xl border border-slate-300 p-3 text-sm focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition-all"></textarea>
+                    </div>
+
+                    <!-- Submit Buttons Container -->
+                    <div class="pt-4 flex flex-col sm:flex-row gap-4">
+                        <button type="submit" class="flex-1 bg-gradient-to-r from-brand-600 to-coolCyan-600 hover:from-brand-700 hover:to-coolCyan-700 text-white font-bold py-4 px-6 rounded-xl shadow-lg shadow-brand-500/25 flex items-center justify-center gap-2 transition-all text-base">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            Submit Service Request
+                        </button>
+                    </div>
+
+                    <p class="text-xs text-center text-slate-500 pt-2">
+                        <i class="fa-solid fa-lock text-slate-400"></i> Your contact details are 100% secure. We never spam.
+                    </p>
+
+                </form>
+            </div>
+
         </div>
+    </section>
 
-        <div class="form-group full">
-          <label for="inqMessage">📝 Problem / Requirement</label>
-          <textarea id="inqMessage" rows="4"
-                    placeholder="जैसे: AC cooling कम है / RO पानी साफ नहीं कर रहा है..."></textarea>
+    <!-- Services Showcase Cards Section -->
+    <section id="services" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-brand-600 text-sm font-bold uppercase tracking-wider bg-brand-50 px-3.5 py-1 rounded-full">Popular Packages</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3">Featured Repair & Maintenance Services</h2>
+                <p class="text-slate-600 mt-2">Comprehensive solutions backed by 30-day service warranty and doorstep support.</p>
+            </div>
+
+            <!-- RO Services Grid -->
+            <div class="mb-14">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="w-8 h-8 rounded-lg bg-sky-100 text-sky-600 flex items-center justify-center font-bold">
+                        <i class="fa-solid fa-glass-water"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900">RO Water Purifier Services</h3>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-6">
+                    <!-- RO Card 1 -->
+                    <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 hover:shadow-xl hover:border-brand-400 transition-all flex flex-col justify-between group">
+                        <div>
+                            <div class="flex justify-between items-start mb-4">
+                                <span class="bg-sky-100 text-sky-700 font-bold text-xs px-3 py-1 rounded-full">Routine Care</span>
+                                <span class="text-2xl font-black text-brand-600">₹499</span>
+                            </div>
+                            <h4 class="text-lg font-bold text-slate-900 group-hover:text-brand-600 transition-colors">RO General Service</h4>
+                            <p class="text-xs text-slate-500 mt-2">Thorough filter flushing, sediment cleaning, TDS level calibration, and leak inspection.</p>
+                            <ul class="mt-4 space-y-2 text-xs text-slate-600">
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Sediment & Pre-Carbon Filter Clean</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Water Hardness / TDS Check</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Booster Pump Pressure Test</li>
+                            </ul>
+                        </div>
+                        <button onclick="bookSpecificService('RO Standard Servicing', 'ro')" class="mt-6 w-full py-2.5 rounded-xl border border-brand-600 text-brand-600 font-bold text-xs hover:bg-brand-600 hover:text-white transition-all">
+                            Book This Package
+                        </button>
+                    </div>
+
+                    <!-- RO Card 2 -->
+                    <div class="bg-slate-50 border-2 border-brand-500 rounded-2xl p-6 hover:shadow-xl transition-all flex flex-col justify-between relative group">
+                        <span class="absolute -top-3 right-6 bg-brand-600 text-white text-[10px] font-bold uppercase tracking-widest px-3 py-0.5 rounded-full shadow">Most Popular</span>
+                        <div>
+                            <div class="flex justify-between items-start mb-4">
+                                <span class="bg-brand-100 text-brand-800 font-bold text-xs px-3 py-1 rounded-full">Full Overhaul</span>
+                                <span class="text-2xl font-black text-brand-600">₹1,299</span>
+                            </div>
+                            <h4 class="text-lg font-bold text-slate-900 group-hover:text-brand-600 transition-colors">Membrane & Filter Change</h4>
+                            <p class="text-xs text-slate-500 mt-2">Complete replacement of dirty filters with original imported RO membrane.</p>
+                            <ul class="mt-4 space-y-2 text-xs text-slate-600">
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> 80/100 GPD RO Membrane</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Pre-filter Candle Replacement</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Activated Post-Carbon Filter</li>
+                            </ul>
+                        </div>
+                        <button onclick="bookSpecificService('RO Membrane Change', 'ro')" class="mt-6 w-full py-2.5 rounded-xl bg-brand-600 text-white font-bold text-xs hover:bg-brand-700 transition-all shadow-md">
+                            Book This Package
+                        </button>
+                    </div>
+
+                    <!-- RO Card 3 -->
+                    <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 hover:shadow-xl hover:border-brand-400 transition-all flex flex-col justify-between group">
+                        <div>
+                            <div class="flex justify-between items-start mb-4">
+                                <span class="bg-purple-100 text-purple-700 font-bold text-xs px-3 py-1 rounded-full">Annual Care</span>
+                                <span class="text-2xl font-black text-brand-600">₹2,499</span>
+                            </div>
+                            <h4 class="text-lg font-bold text-slate-900 group-hover:text-brand-600 transition-colors">1-Year RO AMC Contract</h4>
+                            <p class="text-xs text-slate-500 mt-2">Zero repair cost for 365 days. Includes all spare parts and routine service visits.</p>
+                            <ul class="mt-4 space-y-2 text-xs text-slate-600">
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> 3 Scheduled Routine Maintenance</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Free Unlimited Repair Calls</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Free Replacement of Spares</li>
+                            </ul>
+                        </div>
+                        <button onclick="bookSpecificService('1-Year RO Annual Maintenance Contract (AMC)', 'ro')" class="mt-6 w-full py-2.5 rounded-xl border border-brand-600 text-brand-600 font-bold text-xs hover:bg-brand-600 hover:text-white transition-all">
+                            Book This Package
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AC Services Grid -->
+            <div>
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="w-8 h-8 rounded-lg bg-cyan-100 text-cyan-600 flex items-center justify-center font-bold">
+                        <i class="fa-solid fa-wind"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900">Air Conditioner (AC) Services</h3>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-6">
+                    <!-- AC Card 1 -->
+                    <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 hover:shadow-xl hover:border-brand-400 transition-all flex flex-col justify-between group">
+                        <div>
+                            <div class="flex justify-between items-start mb-4">
+                                <span class="bg-cyan-100 text-cyan-700 font-bold text-xs px-3 py-1 rounded-full">Deep Washing</span>
+                                <span class="text-2xl font-black text-brand-600">₹599</span>
+                            </div>
+                            <h4 class="text-lg font-bold text-slate-900 group-hover:text-brand-600 transition-colors">Foam Jet Service</h4>
+                            <p class="text-xs text-slate-500 mt-2">2x deeper cooling with indoor & outdoor jacket-covered pressure washing.</p>
+                            <ul class="mt-4 space-y-2 text-xs text-slate-600">
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Anti-bacterial Foam Spray</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> High Pressure Water Jet Wash</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Drain Pipe Unclogging</li>
+                            </ul>
+                        </div>
+                        <button onclick="bookSpecificService('AC Foam Jet Service', 'ac')" class="mt-6 w-full py-2.5 rounded-xl border border-brand-600 text-brand-600 font-bold text-xs hover:bg-brand-600 hover:text-white transition-all">
+                            Book This Package
+                        </button>
+                    </div>
+
+                    <!-- AC Card 2 -->
+                    <div class="bg-slate-50 border-2 border-brand-500 rounded-2xl p-6 hover:shadow-xl transition-all flex flex-col justify-between relative group">
+                        <span class="absolute -top-3 right-6 bg-brand-600 text-white text-[10px] font-bold uppercase tracking-widest px-3 py-0.5 rounded-full shadow">Summer Special</span>
+                        <div>
+                            <div class="flex justify-between items-start mb-4">
+                                <span class="bg-amber-100 text-amber-800 font-bold text-xs px-3 py-1 rounded-full">Refill & Seal</span>
+                                <span class="text-2xl font-black text-brand-600">₹1,899</span>
+                            </div>
+                            <h4 class="text-lg font-bold text-slate-900 group-hover:text-brand-600 transition-colors">AC Gas Refill & Leak Fix</h4>
+                            <p class="text-xs text-slate-500 mt-2">Restores ice-cold cooling. Nitrogen pressure testing + genuine refrigerant gas.</p>
+                            <ul class="mt-4 space-y-2 text-xs text-slate-600">
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Complete Leakage Detection</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Pure R32 / R410 / R22 Gas</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Ampere & Pressure Calibration</li>
+                            </ul>
+                        </div>
+                        <button onclick="bookSpecificService('AC Gas Refill & Leak Fixing', 'ac')" class="mt-6 w-full py-2.5 rounded-xl bg-brand-600 text-white font-bold text-xs hover:bg-brand-700 transition-all shadow-md">
+                            Book This Package
+                        </button>
+                    </div>
+
+                    <!-- AC Card 3 -->
+                    <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 hover:shadow-xl hover:border-brand-400 transition-all flex flex-col justify-between group">
+                        <div>
+                            <div class="flex justify-between items-start mb-4">
+                                <span class="bg-emerald-100 text-emerald-700 font-bold text-xs px-3 py-1 rounded-full">Fitment</span>
+                                <span class="text-2xl font-black text-brand-600">₹1,499</span>
+                            </div>
+                            <h4 class="text-lg font-bold text-slate-900 group-hover:text-brand-600 transition-colors">Split AC Installation</h4>
+                            <p class="text-xs text-slate-500 mt-2">Safe wall mounting, precise copper pipe flaring, vacuuming & performance check.</p>
+                            <ul class="mt-4 space-y-2 text-xs text-slate-600">
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Outdoor Bracket Mounting</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Vacuuming & Leak Test</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Free Electrical Wire Connection</li>
+                            </ul>
+                        </div>
+                        <button onclick="bookSpecificService('Split AC Installation', 'ac')" class="mt-6 w-full py-2.5 rounded-xl border border-brand-600 text-brand-600 font-bold text-xs hover:bg-brand-600 hover:text-white transition-all">
+                            Book This Package
+                        </button>
+                    </div>
+                </div>
+            </div>
+
         </div>
-      </div>
+    </section>
 
-      <button type="submit" class="inquiry-btn">💬 WhatsApp पर Inquiry भेजें</button>
-      <p class="inquiry-note">आपकी details WhatsApp message में खुलेंगी। Send दबाकर inquiry भेज दें।</p>
-    </form>
-  </div>
-</section>
+    <!-- Why Choose Us Trust Pillars -->
+    <section class="py-16 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-coolCyan-400 text-sm font-bold uppercase tracking-wider bg-white/10 px-3.5 py-1 rounded-full">Our Assurance</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold mt-3">Why 15,000+ Homeowners Trust Us</h2>
+            </div>
 
-<style>
-.inquiry-section{
-  padding:55px 20px;
-  background:linear-gradient(135deg,#f4f8ff,#ffffff);
-}
-.inquiry-card{
-  max-width:850px;
-  margin:25px auto 0;
-  padding:30px;
-  background:#fff;
-  border-radius:20px;
-  box-shadow:0 8px 30px rgba(0,0,0,.12);
-}
-.form-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:18px;
-}
-.form-group{display:flex;flex-direction:column}
-.form-group.full{grid-column:1/-1}
-.form-group label{
-  margin-bottom:7px;
-  font-weight:700;
-}
-.form-group input,
-.form-group select,
-.form-group textarea{
-  width:100%;
-  box-sizing:border-box;
-  padding:13px 14px;
-  border:1px solid #d7dee8;
-  border-radius:10px;
-  font:inherit;
-  background:#fff;
-}
-.form-group textarea{resize:vertical}
-.inquiry-btn{
-  width:100%;
-  margin-top:22px;
-  padding:15px 20px;
-  border:0;
-  border-radius:12px;
-  background:#25d366;
-  color:#fff;
-  font-size:17px;
-  font-weight:700;
-  cursor:pointer;
-}
-.inquiry-btn:hover{opacity:.88}
-.inquiry-note{
-  text-align:center;
-  margin:12px 0 0;
-  color:#666;
-  font-size:13px;
-}
-@media(max-width:650px){
-  .form-grid{grid-template-columns:1fr}
-  .form-group.full{grid-column:auto}
-  .inquiry-card{padding:20px}
-}
-</style>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="p-6 rounded-2xl bg-white/5 border border-white/10 text-center hover:bg-white/10 transition-all">
+                    <div class="w-14 h-14 mx-auto rounded-2xl bg-brand-500/20 text-brand-400 flex items-center justify-center text-2xl mb-4">
+                        <i class="fa-solid fa-user-shield"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Verified Technicians</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">Background checked, uniform-clad, background-verified engineers with 5+ years experience.</p>
+                </div>
 
-<script>
-document.getElementById("inquiryForm").addEventListener("submit", function(e){
-  e.preventDefault();
+                <div class="p-6 rounded-2xl bg-white/5 border border-white/10 text-center hover:bg-white/10 transition-all">
+                    <div class="w-14 h-14 mx-auto rounded-2xl bg-coolCyan-500/20 text-coolCyan-400 flex items-center justify-center text-2xl mb-4">
+                        <i class="fa-solid fa-boxes-packing"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">100% Genuine Parts</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">Direct factory-sourced authentic filters, compressors, and copper pipes.</p>
+                </div>
 
-  const name = document.getElementById("inqName").value.trim();
-  const phone = document.getElementById("inqPhone").value.trim();
-  const service = document.getElementById("inqService").value;
-  const visit = document.getElementById("inqVisit").value || "कोई भी समय";
-  const address = document.getElementById("inqAddress").value.trim() || "नहीं बताया";
-  const message = document.getElementById("inqMessage").value.trim() || "कोई अतिरिक्त जानकारी नहीं";
+                <div class="p-6 rounded-2xl bg-white/5 border border-white/10 text-center hover:bg-white/10 transition-all">
+                    <div class="w-14 h-14 mx-auto rounded-2xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-2xl mb-4">
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">30-Day Guarantee</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">If the issue reoccurs within 30 days, we fix it again completely free of charge.</p>
+                </div>
 
-  if(!/^[0-9]{10}$/.test(phone)){
-    alert("कृपया 10 digit mobile number डालें।");
-    return;
-  }
+                <div class="p-6 rounded-2xl bg-white/5 border border-white/10 text-center hover:bg-white/10 transition-all">
+                    <div class="w-14 h-14 mx-auto rounded-2xl bg-amber-500/20 text-amber-400 flex items-center justify-center text-2xl mb-4">
+                        <i class="fa-solid fa-file-invoice-dollar"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Upfront Rate Cards</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">No hidden charges or surprise costs after completing the doorstep service.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  const text =
-`*RO & AC Service Inquiry*%0A%0A` +
-`👤 Name: ${encodeURIComponent(name)}%0A` +
-`📱 Mobile: ${encodeURIComponent(phone)}%0A` +
-`🔧 Service: ${encodeURIComponent(service)}%0A` +
-`📅 Preferred Visit: ${encodeURIComponent(visit)}%0A` +
-`📍 Address/Area: ${encodeURIComponent(address)}%0A` +
-`📝 Problem/Requirement: ${encodeURIComponent(message)}`;
+    <!-- Customer Reviews Section -->
+    <section id="reviews" class="py-16 bg-slate-50 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-brand-600 text-sm font-bold uppercase tracking-wider bg-brand-50 px-3.5 py-1 rounded-full">Customer Stories</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3">What Our Clients Say</h2>
+            </div>
 
-  window.open("https://wa.me/919347339870?text=" + text, "_blank");
-});
-</script>
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Review 1 -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm mb-3">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs text-slate-600 italic leading-relaxed">
+                            "Booked AC Foam Jet servicing for my 1.5-ton Daikin Split AC. Technician arrived within 45 minutes with a complete cleaning kit. Cooling is back like brand new!"
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-brand-100 text-brand-700 font-bold flex items-center justify-center text-sm">
+                            VS
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-slate-800">Vikram S.</p>
+                            <p class="text-[11px] text-slate-400">Daikin AC Jet Wash • 2 days ago</p>
+                        </div>
+                    </div>
+                </div>
 
-<!-- ONLINE PAYMENT SECTION -->
-<section class="payment-section" id="payment">
-  <h2>💳 Online Payment</h2>
-  <p>Harsh Air Conditioner की Service के लिए Online Payment करें</p>
+                <!-- Review 2 -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm mb-3">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs text-slate-600 italic leading-relaxed">
+                            "My Kent RO water purified water was tasting foul. They replaced the membrane and filters right in front of me with original sealed parts. Very honest behavior!"
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-emerald-100 text-emerald-700 font-bold flex items-center justify-center text-sm">
+                            PM
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-slate-800">Pooja Sharma</p>
+                            <p class="text-[11px] text-slate-400">Kent RO Filter Change • 1 week ago</p>
+                        </div>
+                    </div>
+                </div>
 
-  <div class="payment-card">
-    <div class="payment-icon">💰</div>
+                <!-- Review 3 -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm mb-3">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs text-slate-600 italic leading-relaxed">
+                            "Got their RO + AC Combo AMC plan for my home. Very economical compared to other local providers and the WhatsApp booking support is super quick."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-purple-100 text-purple-700 font-bold flex items-center justify-center text-sm">
+                            AK
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-slate-800">Amit Kapoor</p>
+                            <p class="text-[11px] text-slate-400">RO & AC Combo AMC • 2 weeks ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <h3>UPI Payment</h3>
+    <!-- FAQ Accordion Section -->
+    <section id="faqs" class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-brand-600 text-sm font-bold uppercase tracking-wider bg-brand-50 px-3.5 py-1 rounded-full">Got Questions?</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3">Frequently Asked Questions</h2>
+            </div>
 
-    <p class="upi-id">
-      UPI ID: <strong>9368096220@pthdfc</strong>
-    </p>
+            <div class="space-y-4">
+                
+                <!-- FAQ Item 1 -->
+                <div class="border border-slate-200 rounded-2xl overflow-hidden transition-all">
+                    <button onclick="toggleFaq(this)" class="w-full p-5 text-left font-bold text-slate-800 bg-slate-50 hover:bg-slate-100 flex justify-between items-center transition-colors">
+                        <span>How often should RO water purifier filters be replaced?</span>
+                        <i class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer hidden p-5 bg-white text-slate-600 text-xs sm:text-sm leading-relaxed border-t border-slate-100">
+                        RO sediment and carbon pre-filters should ideally be serviced or replaced every 6 to 9 months depending on your input water TDS levels. The main RO membrane typically lasts 12 to 18 months under normal household usage.
+                    </div>
+                </div>
 
-    <a
-      href="upi://pay?pa=9368096220@pthdfc&pn=Harsh%20Air%20Conditioner&cu=INR"
-      class="pay-button">
-      💳 Pay Now
-    </a>
+                <!-- FAQ Item 2 -->
+                <div class="border border-slate-200 rounded-2xl overflow-hidden transition-all">
+                    <button onclick="toggleFaq(this)" class="w-full p-5 text-left font-bold text-slate-800 bg-slate-50 hover:bg-slate-100 flex justify-between items-center transition-colors">
+                        <span>What is included in an AC Foam Jet Service?</span>
+                        <i class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer hidden p-5 bg-white text-slate-600 text-xs sm:text-sm leading-relaxed border-t border-slate-100">
+                        Our AC Foam Jet Wash includes an intense pressure water jet cleaning of the cooling coil and blower, anti-bacterial active foam treatment, outdoor unit condenser cleaning, drain tray unclogging, and cooling performance check.
+                    </div>
+                </div>
 
-    <p class="after-payment">
-      Payment करने के बाद Screenshot WhatsApp पर भेजें
-    </p>
+                <!-- FAQ Item 3 -->
+                <div class="border border-slate-200 rounded-2xl overflow-hidden transition-all">
+                    <button onclick="toggleFaq(this)" class="w-full p-5 text-left font-bold text-slate-800 bg-slate-50 hover:bg-slate-100 flex justify-between items-center transition-colors">
+                        <span>Do you provide a warranty on repairs and spare parts?</span>
+                        <i class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer hidden p-5 bg-white text-slate-600 text-xs sm:text-sm leading-relaxed border-t border-slate-100">
+                        Yes! All repair works and replaced spare parts (like RO pumps, membranes, AC capacitors, PCB boards, or gas refilling) come with a mandatory 30-day doorstep service guarantee.
+                    </div>
+                </div>
 
-    <a
-      href="https://wa.me/919347339870?text=Hello%20Harsh%20Air%20Conditioner%2C%20I%20have%20completed%20the%20payment.%20Please%20check%20my%20payment%20screenshot."
-      class="whatsapp-button">
-      📲 WhatsApp पर Payment Screenshot भेजें
-    </a>
-  </div>
-</section>
+                <!-- FAQ Item 4 -->
+                <div class="border border-slate-200 rounded-2xl overflow-hidden transition-all">
+                    <button onclick="toggleFaq(this)" class="w-full p-5 text-left font-bold text-slate-800 bg-slate-50 hover:bg-slate-100 flex justify-between items-center transition-colors">
+                        <span>How quickly can a technician visit my house?</span>
+                        <i class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer hidden p-5 bg-white text-slate-600 text-xs sm:text-sm leading-relaxed border-t border-slate-100">
+                        We offer Express 60-Minute Doorstep Arrival for urgent service requests placed before 6:00 PM. You can also pick your preferred morning, afternoon, or weekend slot on our form.
+                    </div>
+                </div>
 
-<!-- FOOTER -->
-<footer>
+            </div>
+        </div>
+    </section>
 
-<h2>🌟 Harsh Air Conditioner</h2>
+    <!-- Footer Section -->
+    <footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-10">
+                
+                <!-- Col 1: About -->
+                <div class="space-y-4">
+                    <a href="#" class="flex items-center gap-2">
+                        <div class="w-9 h-9 rounded-lg bg-gradient-to-tr from-brand-600 to-coolCyan-500 flex items-center justify-center text-white">
+                            <i class="fa-solid fa-snowflake"></i>
+                        </div>
+                        <span class="text-xl font-bold text-white tracking-tight">COOL & PURE</span>
+                    </a>
+                    <p class="text-xs leading-relaxed">
+                        Your trusted multi-brand RO Water Purifier & Air Conditioner sales, installation, repair, and AMC maintenance center.
+                    </p>
+                </div>
 
-<p>
-RO • AC • Washing Machine
-</p>
+                <!-- Col 2: Services -->
+                <div>
+                    <h4 class="text-white font-bold text-sm mb-4">Popular Services</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#inquiry-form" class="hover:text-white transition-colors">RO Filter & Membrane Replacement</a></li>
+                        <li><a href="#inquiry-form" class="hover:text-white transition-colors">AC Foam Jet Service</a></li>
+                        <li><a href="#inquiry-form" class="hover:text-white transition-colors">AC Gas Refilling (R32/R410)</a></li>
+                        <li><a href="#inquiry-form" class="hover:text-white transition-colors">Split AC Installation</a></li>
+                        <li><a href="#inquiry-form" class="hover:text-white transition-colors">Annual Maintenance (AMC) Plans</a></li>
+                    </ul>
+                </div>
 
-<p>
-RO & AC Rent पर | New RO & AC | Washing Machine
-</p>
+                <!-- Col 3: Brands Serviced -->
+                <div>
+                    <h4 class="text-white font-bold text-sm mb-4">Supported Brands</h4>
+                    <p class="text-xs leading-relaxed">
+                        Kent, Aquaguard, Pureit, Livpure, Voltas, Daikin, LG, Samsung, Blue Star, Hitachi, Carrier, Panasonic & All Major Brands.
+                    </p>
+                </div>
 
-<p>
-📍 gaur Yamuna City RO/AC service best technician 203201
-</p>
+                <!-- Col 4: Contact Info -->
+                <div>
+                    <h4 class="text-white font-bold text-sm mb-4">Direct Contact</h4>
+                    <ul class="space-y-2.5 text-xs">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-phone text-brand-500"></i> 9347339870</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-headset text-coolCyan-400"></i> Toll-Free: 9347339870</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-envelope text-slate-400"></i> support@coolandpureservices.com</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-location-dot text-rose-500"></i> Gaur Yamuna City, Greater Noida 203201</li>
+                    </ul>
+                </div>
 
-<p>
-📞 9347339870 | 9347339870
-</p>
+            </div>
 
-<p style="margin-top:20px;">
-© <span id="year"></span> Harsh Air Conditioner. All Rights Reserved.
-</p>
+            <div class="pt-8 border-t border-slate-900 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
+                <p>© 2026 Cool & Pure Home Services. All rights reserved.</p>
+                <div class="flex gap-4">
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                    <a href="#" class="hover:text-white transition-colors">Warranty Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-</footer>
+    <!-- Floating Mobile Quick Action Bar -->
+    <div class="fixed bottom-0 left-0 right-0 z-30 bg-white/90 backdrop-blur-md border-t border-slate-200 p-3 flex items-center justify-around sm:hidden">
+        <a href="tel:919347339870" class="flex-1 mr-2 py-2.5 bg-slate-900 text-white font-bold text-xs rounded-xl flex items-center justify-center gap-2 shadow">
+            <i class="fa-solid fa-phone text-emerald-400"></i> Call Tech
+        </a>
+        <a href="https://wa.me/919347339870?text=Hi%2C%20I%20need%20urgent%20RO%20/%20AC%20Service" target="_blank" rel="noopener noreferrer" class="flex-1 ml-2 py-2.5 bg-emerald-500 text-white font-bold text-xs rounded-xl flex items-center justify-center gap-2 shadow">
+            <i class="fa-brands fa-whatsapp text-lg"></i> WhatsApp
+        </a>
+    </div>
 
-<!-- WHATSAPP FLOATING BUTTON -->
-<a class="whatsapp"
-href="https://wa.me/919347339870?text=Namaste%20Harsh%20Air%20Conditioner"
-target="_blank">
-💬
-</a>
+    <!-- Form Submission Receipt & Ticket Modal -->
+    <div id="ticketModal" class="fixed inset-0 z-50 hidden bg-slate-900/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative animate-in fade-in zoom-in duration-200">
+            
+            <!-- Close Modal Icon -->
+            <button onclick="closeModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600 w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
 
-<script>
+            <!-- Success Header -->
+            <div class="text-center">
+                <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full mx-auto flex items-center justify-center text-3xl mb-4">
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
+                <h3 class="text-2xl font-extrabold text-slate-900">Inquiry Submitted!</h3>
+                <p class="text-xs text-slate-500 mt-1">Our customer support manager will call you shortly.</p>
+            </div>
 
-/* MOBILE MENU */
-function toggleMenu(){
+            <!-- Ticket Reference Banner -->
+            <div class="my-6 p-4 rounded-2xl bg-brand-50 border border-brand-200 text-center">
+                <span class="text-xs uppercase tracking-wider text-brand-700 font-bold block mb-1">Ticket Reference ID</span>
+                <span id="modalTicketRef" class="text-2xl font-black text-brand-900 tracking-widest font-mono">CP-849201</span>
+            </div>
 
-const nav = document.getElementById("navLinks");
+            <!-- Summary Details -->
+            <div class="space-y-2 text-xs border-y border-slate-100 py-4 mb-6 text-slate-700">
+                <div class="flex justify-between">
+                    <span class="text-slate-400">Customer Name:</span>
+                    <span id="modalCustomerName" class="font-bold text-slate-900">Rahul Sharma</span>
+                </div>
+                <div class="flex justify-between">
+                    <span class="text-slate-400">Contact Mobile:</span>
+                    <span id="modalPhone" class="font-bold text-slate-900">+91 9347339870</span>
+                </div>
+                <div class="flex justify-between">
+                    <span class="text-slate-400">Selected Service:</span>
+                    <span id="modalService" class="font-bold text-brand-600">AC Foam Jet Wash</span>
+                </div>
+                <div class="flex justify-between">
+                    <span class="text-slate-400">Brand:</span>
+                    <span id="modalBrand" class="font-bold text-slate-900">Daikin</span>
+                </div>
+                <div class="flex justify-between">
+                    <span class="text-slate-400">Preferred Slot:</span>
+                    <span id="modalSlot" class="font-bold text-slate-900">Urgent (Within 2 Hours)</span>
+                </div>
+            </div>
 
-nav.classList.toggle("active");
+            <!-- Modal Action Buttons -->
+            <div class="space-y-3">
+                <a id="modalWhatsappBtn" href="#" target="_blank" rel="noopener noreferrer" class="w-full bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-3.5 px-4 rounded-xl flex items-center justify-center gap-2 text-sm shadow-md transition-all">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    Send Details via WhatsApp
+                </a>
+                <button onclick="closeModal()" class="w-full bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold py-3 px-4 rounded-xl text-xs transition-colors">
+                    Close Window
+                </button>
+            </div>
 
-}
+        </div>
+    </div>
 
-/* CLOSE MENU AFTER CLICK */
-document.querySelectorAll(".nav-links a").forEach(function(link){
+    <!-- JavaScript Application Logic -->
+    <script>
+        // Data Options for Dynamic Dropdown
+        const serviceOptionsData = {
+            ro: [
+                "RO Standard Servicing & Filter Washing",
+                "RO High-TDS Membrane Replacement",
+                "RO UV Lamp / UF Filter Repair",
+                "RO Booster Pump & Adapter Repair",
+                "Water Leakage & Low Flow Fix",
+                "New RO Installation & Wall Mounting",
+                "Uninstallation / Shifting",
+                "1-Year RO Annual Maintenance Contract (AMC)"
+            ],
+            ac: [
+                "AC Foam Jet Deep Washing",
+                "AC Gas Refill & Leak Fixing",
+                "AC Not Cooling / Sensor Repair",
+                "AC Indoor Water Leakage Repair",
+                "AC PCB Inverter Board Repair",
+                "Split AC Installation",
+                "Window AC Installation",
+                "AC Uninstallation",
+                "1-Year AC Comprehensive AMC"
+            ],
+            both: [
+                "RO General Service + AC Jet Wash Combo",
+                "RO Filter Change + AC Gas Charging Combo",
+                "Complete Home RO & AC Maintenance Package"
+            ]
+        };
 
-link.addEventListener("click",function(){
+        // Initialize dynamic dropdown on load
+        window.addEventListener('DOMContentLoaded', () => {
+            selectServiceCategory('ro');
+        });
 
-document.getElementById("navLinks")
-.classList.remove("active");
+        // Toggle Service Category Tab
+        function selectServiceCategory(cat) {
+            document.getElementById('selectedCategory').value = cat;
+            
+            // Highlight Buttons
+            const buttons = document.querySelectorAll('.cat-btn');
+            buttons.forEach(btn => {
+                btn.classList.remove('border-brand-500', 'bg-brand-50', 'text-brand-700');
+                btn.classList.add('border-slate-200', 'bg-slate-50', 'text-slate-600');
+            });
 
-});
+            const activeBtn = document.getElementById(`cat-btn-${cat}`);
+            if (activeBtn) {
+                activeBtn.classList.remove('border-slate-200', 'bg-slate-50', 'text-slate-600');
+                activeBtn.classList.add('border-brand-500', 'bg-brand-50', 'text-brand-700');
+            }
 
-});
+            // Update Specific Services Select Dropdown Options
+            const specificSelect = document.getElementById('specificService');
+            specificSelect.innerHTML = '';
 
-/* CURRENT YEAR */
-document.getElementById("year").textContent =
-new Date().getFullYear();
+            const list = serviceOptionsData[cat] || serviceOptionsData.ro;
+            list.forEach(item => {
+                const opt = document.createElement('option');
+                opt.value = item;
+                opt.textContent = item;
+                specificSelect.appendChild(opt);
+            });
+        }
 
-</script>
+        // Quick Selector from Hero Graphic
+        function quickSelectCategory(cat) {
+            selectServiceCategory(cat);
+            const inquiryElem = document.getElementById('inquiry-form');
+            if (inquiryElem) {
+                inquiryElem.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
 
+        // Direct Booking shortcut from Service Cards
+        function bookSpecificService(serviceName, cat) {
+            selectServiceCategory(cat);
+            const specificSelect = document.getElementById('specificService');
+            
+            // If option exists, select it, else create
+            let found = false;
+            for (let i = 0; i < specificSelect.options.length; i++) {
+                if (specificSelect.options[i].value === serviceName) {
+                    specificSelect.selectedIndex = i;
+                    found = true;
+                    break;
+                }
+            }
+            if (!found) {
+                const opt = document.createElement('option');
+                opt.value = serviceName;
+                opt.textContent = serviceName;
+                opt.selected = true;
+                specificSelect.appendChild(opt);
+            }
 
-<style>
-.payment-section {
-  padding: 45px 20px;
-  text-align: center;
-  background: linear-gradient(135deg, #eef5ff, #ffffff);
-}
+            const inquiryElem = document.getElementById('inquiry-form');
+            if (inquiryElem) {
+                inquiryElem.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
 
-.payment-section h2 {
-  font-size: 30px;
-  margin-bottom: 10px;
-}
+        // COST ESTIMATOR CALCULATOR LOGIC
+        function setCalcFilter(filter) {
+            document.querySelectorAll('.calc-tab-btn').forEach(btn => {
+                btn.classList.remove('bg-brand-600', 'text-white', 'shadow-sm');
+                btn.classList.add('bg-white', 'text-slate-600');
+            });
 
-.payment-card {
-  max-width: 420px;
-  margin: 25px auto;
-  padding: 30px 20px;
-  background: #fff;
-  border-radius: 20px;
-  box-shadow: 0 8px 30px rgba(0,0,0,0.15);
-}
+            const activeTab = document.getElementById(`calc-tab-${filter}`);
+            if (activeTab) {
+                activeTab.classList.remove('bg-white', 'text-slate-600');
+                activeTab.classList.add('bg-brand-600', 'text-white', 'shadow-sm');
+            }
 
-.payment-icon {
-  font-size: 55px;
-}
+            const roItems = document.querySelectorAll('.ro-item');
+            const acItems = document.querySelectorAll('.ac-item');
 
-.payment-card h3 {
-  font-size: 24px;
-}
+            if (filter === 'all') {
+                roItems.forEach(i => i.classList.remove('hidden'));
+                acItems.forEach(i => i.classList.remove('hidden'));
+            } else if (filter === 'ro') {
+                roItems.forEach(i => i.classList.remove('hidden'));
+                acItems.forEach(i => i.classList.add('hidden'));
+            } else if (filter === 'ac') {
+                roItems.forEach(i => i.classList.add('hidden'));
+                acItems.forEach(i => i.classList.remove('hidden'));
+            }
+        }
 
-.upi-id {
-  background: #f1f5f9;
-  padding: 12px;
-  border-radius: 10px;
-  word-break: break-all;
-}
+        function calculateEstimate() {
+            const checkboxes = document.querySelectorAll('.calc-checkbox:checked');
+            let total = 0;
+            const summaryList = document.getElementById('calc-summary-list');
+            summaryList.innerHTML = '';
 
-.pay-button,
-.whatsapp-button {
-  display: block;
-  padding: 15px;
-  margin: 15px auto;
-  border-radius: 12px;
-  color: white;
-  text-decoration: none;
-  font-size: 17px;
-  font-weight: bold;
-}
+            if (checkboxes.length === 0) {
+                summaryList.innerHTML = `<p class="text-slate-400 italic">No services selected yet. Check boxes on the left to add items.</p>`;
+            } else {
+                checkboxes.forEach(cb => {
+                    const price = parseInt(cb.getAttribute('data-price') || 0);
+                    const name = cb.getAttribute('data-name');
+                    total += price;
 
-.pay-button {
-  background: #087cff;
-}
+                    const row = document.createElement('div');
+                    row.className = 'flex justify-between items-center py-1 border-b border-slate-50';
+                    row.innerHTML = `<span class="truncate pr-2">${name}</span><span class="font-bold text-slate-800">₹${price}</span>`;
+                    summaryList.appendChild(row);
+                });
+            }
 
-.whatsapp-button {
-  background: #25d366;
-}
+            document.getElementById('calc-total-price').textContent = `₹${total}`;
+        }
 
-.pay-button:hover,
-.whatsapp-button:hover {
-  opacity: 0.85;
-}
+        function transferEstimateToForm() {
+            const checkedBoxes = document.querySelectorAll('.calc-checkbox:checked');
+            if (checkedBoxes.length === 0) {
+                alert("Please select at least one service in the calculator!");
+                return;
+            }
 
-.after-payment {
-  font-size: 14px;
-  color: #555;
-}
-</style>
+            let names = [];
+            checkedBoxes.forEach(cb => names.push(cb.getAttribute('data-name')));
+
+            // Determine main category
+            let hasRo = Array.from(checkedBoxes).some(cb => cb.closest('.ro-item'));
+            let hasAc = Array.from(checkedBoxes).some(cb => cb.closest('.ac-item'));
+            
+            let cat = 'ro';
+            if (hasRo && hasAc) cat = 'both';
+            else if (hasAc) cat = 'ac';
+
+            selectServiceCategory(cat);
+
+            const descField = document.getElementById('problemDesc');
+            descField.value = `Selected Estimated Services: ${names.join(', ')}. (Estimated Quote: ${document.getElementById('calc-total-price').textContent})`;
+
+            document.getElementById('inquiry-form').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // FORM SUBMISSION HANDLER
+        function handleFormSubmit(e) {
+            e.preventDefault();
+
+            // Form Fields
+            const name = document.getElementById('fullName').value.trim();
+            const phone = document.getElementById('phoneNumber').value.trim();
+            const category = document.getElementById('selectedCategory').value.toUpperCase();
+            const service = document.getElementById('specificService').value;
+            const brand = document.getElementById('brandSelect').value;
+            const slot = document.getElementById('urgencySlot').value;
+            const address = document.getElementById('address').value.trim();
+            const problem = document.getElementById('problemDesc').value.trim();
+
+            // Generate Random Ticket ID (e.g. CP-738201)
+            const randomNum = Math.floor(100000 + Math.random() * 900000);
+            const ticketRef = `CP-${randomNum}`;
+
+            // Populate Modal Fields
+            document.getElementById('modalTicketRef').textContent = ticketRef;
+            document.getElementById('modalCustomerName').textContent = name;
+            document.getElementById('modalPhone').textContent = phone;
+            document.getElementById('modalService').textContent = `${category} - ${service}`;
+            document.getElementById('modalBrand').textContent = brand || 'Not Specified';
+            document.getElementById('modalSlot').textContent = slot;
+
+            // Prepare Pre-filled WhatsApp Link
+            const waMessage = `*NEW SERVICE INQUIRY TICKET*%0A` +
+                `------------------------------------%0A` +
+                `*Ticket Reference:* ${ticketRef}%0A` +
+                `*Name:* ${encodeURIComponent(name)}%0A` +
+                `*Phone:* ${encodeURIComponent(phone)}%0A` +
+                `*Service:* ${encodeURIComponent(service)} (${category})%0A` +
+                `*Brand:* ${encodeURIComponent(brand)}%0A` +
+                `*Preferred Slot:* ${encodeURIComponent(slot)}%0A` +
+                `*Address:* ${encodeURIComponent(address)}%0A` +
+                `*Notes:* ${encodeURIComponent(problem || 'None')}%0A` +
+                `------------------------------------%0A` +
+                `Please confirm technician schedule.`;
+
+            const waUrl = `https://wa.me/919347339870?text=${waMessage}`;
+            document.getElementById('modalWhatsappBtn').href = waUrl;
+
+            // Show Modal
+            document.getElementById('ticketModal').classList.remove('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('ticketModal').classList.add('hidden');
+            document.getElementById('mainInquiryForm').reset();
+            selectServiceCategory('ro');
+        }
+
+        // FAQ Accordion Toggle
+        function toggleFaq(btn) {
+            const answer = btn.nextElementSibling;
+            const icon = btn.querySelector('i');
+            
+            if (answer.classList.contains('hidden')) {
+                answer.classList.remove('hidden');
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                answer.classList.add('hidden');
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+    </script>
 </body>
-  </html>
+</html>
